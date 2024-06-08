@@ -6,7 +6,13 @@ import twitter from "../images/twitter.png";
 import insta from "../images/insta.png";
 import dribble from "../images/dribble.png";
 import behence from "../images/behence.png";
+// import { useNavigate } from "react-router-dom";
 function Home() {
+  // const navigate = useNavigate();
+  // function goToHome() {
+  //   navigate("/home");
+  // }
+
   return (
     <div className="row-flex-main home">
       <div className=" flex-col">

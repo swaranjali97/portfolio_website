@@ -1,14 +1,14 @@
 import React from "react";
 import "../App.css";
-import logo from "../images/new_logo.png";
+// import logo from "../images/new_logo.png";
 import planning from "../images/planning.png";
 import tools from "../images/tools.png";
 import branding from "../images/branding.png";
 import doc from "../images/doc.png";
 function About() {
   return (
-    <div className="about">
-      <div className="header">
+    <div className="about" id="about">
+      {/* <div className="header">
         <img className="logo-2" src={logo} alt="" />
         <div className="name-2">Stellar</div>
         <div className="nav-options-2">HOME</div>
@@ -16,7 +16,7 @@ function About() {
         <div className="nav-options-2">SERVICES</div>
         <div className="nav-options-2">WORKS</div>
         <div className="nav-options-2 contacts">CONTACTS</div>
-      </div>
+      </div> */}
       <div className="who-we-are">
         <p>01.</p>
         <p className="hr-line"></p>
