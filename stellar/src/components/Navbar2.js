@@ -7,11 +7,31 @@ function Navbar2() {
       <div className="header">
         <img className="logo-2" src={logo} alt="" />
         <div className="name-2">Stellar</div>
-        <div className="nav-options-2">HOME</div>
-        <div className="nav-options-2">ABOUT</div>
-        <div className="nav-options-2">SERVICES</div>
-        <div className="nav-options-2">WORKS</div>
-        <div className="nav-options-2 contacts">CONTACTS</div>
+        <div className="nav-options-2">
+          <a href="#home" className="navoptions-color">
+            HOME
+          </a>
+        </div>
+        <div className="nav-options-2">
+          <a href="#about" className="navoptions-color">
+            ABOUT
+          </a>
+        </div>
+        <div className="nav-options-2">
+          <a href="#services" className="navoptions-color">
+            SERVICES
+          </a>
+        </div>
+        <div className="nav-options-2">
+          <a href="#works" className="navoptions-color">
+            WORKS
+          </a>
+        </div>
+        <div className="nav-options-2 contacts">
+          <a href="contact" className="navoptions-color">
+            CONTACTS
+          </a>
+        </div>
       </div>
     </div>
   );

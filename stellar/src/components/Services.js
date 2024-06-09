@@ -1,7 +1,7 @@
 import "../App.css";
 function Services() {
   return (
-    <div className="services">
+    <div className="services" id="services">
       <div className="who-we-are">
         <p>01.</p>
         <p className="hr-line"></p>

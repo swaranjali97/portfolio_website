@@ -8,9 +8,28 @@ import man from "../images/man.jpg";
 import stool from "../images/stool.jpg";
 import plant from "../images/plant.jpg";
 
+const counts = document.querySelectorAll(".counts");
+const speed = 97;
+counts.forEach((counter) => {
+  function upData() {
+    const target = Number(counter.getAttribute("data-target"));
+    const count = Number(counter.innerText);
+    const inc = target / speed;
+    if (count < target) {
+      counter.innerText = Math.ceil(Math.floor(inc) + count);
+      // count += Math.max(1, Math.floor(inc));
+      // counter.innerText = count;
+      setTimeout(upData, 15);
+    } else {
+      counter.innerText = target;
+    }
+  }
+  upData();
+});
+// ..............//
 function Works() {
   return (
-    <div className="works">
+    <div className="works" id="works">
       <div className="recent-work">
         <p>03.</p>
         <p className="hr-line"></p>
@@ -106,8 +125,40 @@ function Works() {
         </div>
       </div>
       <div className="dots">
-        <div class="dot active"></div>
-        <div class="dot"></div>
+        <div className="dot active"></div>
+        <div className="dot"></div>
+      </div>
+      <div className="number-section">
+        <div className="grid5">
+          <div>
+            <div className="num counts counter" data-target="213">
+              0
+            </div>
+
+            <div className="bottom-line">PROJECTS COMPLETED</div>
+          </div>
+          <div>
+            <div className="num counts counter" data-target="179">
+              0
+            </div>
+
+            <div className="bottom-line"> HAPPY CLIENTS</div>
+          </div>
+          <div>
+            <div className="num counts counter" data-target="35">
+              0
+            </div>
+
+            <div className="bottom-line">AWARDS RECEIVED</div>
+          </div>
+          <div>
+            <div className="num counts counter" data-target="2319">
+              0
+            </div>
+
+            <div className="bottom-line">CUPS OF COFFEE</div>
+          </div>
+        </div>
       </div>
     </div>
   );

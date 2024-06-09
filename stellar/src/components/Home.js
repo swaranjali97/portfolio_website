@@ -14,17 +14,37 @@ function Home() {
   // }
 
   return (
-    <div className="row-flex-main home">
+    <div className="row-flex-main home" id="home">
       <div className=" flex-col">
         {/* navbar */}
         <div className="navbar flex-row">
           <img className="logo" src={logo} alt="" />
           <div className="name">Stellar</div>
-          <div className="nav-options home-icon">HOME</div>
-          <div className="nav-options">ABOUT</div>
-          <div className="nav-options">SERVICES</div>
-          <div className="nav-options">WORKS</div>
-          <div className="nav-options">CONTACTS</div>
+          <div className="nav-options home-icon">
+            <a href="#home" className="navoptions-color">
+              HOME
+            </a>
+          </div>
+          <div className="nav-options">
+            <a href="#about" className="navoptions-color">
+              ABOUT
+            </a>
+          </div>
+          <div className="nav-options">
+            <a href="#services" className="navoptions-color">
+              SERVICES
+            </a>
+          </div>
+          <div className="nav-options">
+            <a href="#works" className="navoptions-color">
+              WORKS
+            </a>
+          </div>
+          <div className="nav-options">
+            <a href="contact" className="navoptions-color">
+              CONTACTS
+            </a>
+          </div>
         </div>
 
         {/* headline */}
@@ -36,7 +56,7 @@ function Home() {
         </div>
 
         {/* textbox */}
-        <div className="input-text">
+        <div className="input-text rectangle">
           <div>
             <span>
               MORE ABOUT US <b>&#8594;</b>
@@ -48,14 +68,14 @@ function Home() {
       {/* main-row-flex started*/}
       {/* play button */}
       <div className="container">
-        <div className="circle"></div>
+        <div className="circle "></div>
         <div className="triangle"></div>
         <div className="play-vd">PLAY VIDEO</div>
       </div>
       {/* right-icons */}
       <div className="right-icons">
         <div>
-          <img className="fb" src={fb} alt="" />
+          <img className="fb  " src={fb} alt="" />
         </div>
         <div>
           <img className="fb" src={twitter} alt="" />

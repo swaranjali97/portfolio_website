@@ -7,6 +7,7 @@ import Works from "./components/Works";
 import "./App.css";
 import About from "./components/About";
 import Navbar2 from "./components/Navbar2";
+import Contact from "./components/Contact";
 function App() {
   return (
     <div className="App">
@@ -24,6 +25,7 @@ function App() {
       <About />
       <Services />
       <Works />
+      <Contact />
     </div>
   );
 }

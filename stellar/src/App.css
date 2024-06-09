@@ -43,6 +43,19 @@
   font-family: "Montserrat", sans-serif;
   letter-spacing: 0.3rem;
 }
+.navoptions-color {
+  color: #a8a8a8;
+  text-decoration: none;
+}
+.navoptions-color:hover {
+  color: #e0e0e0;
+}
+.navoptions-color:active {
+  color: #e0e0e0;
+}
+/* .navoptions-color:visited {
+  color: #a8a8a8;
+} */
 .name {
   font-family: sans-serif;
   color: #b0b0b0;
@@ -66,7 +79,7 @@
 }
 .input-text {
   background-color: transparent;
-  /* border: orangered; */
+
   border: 5px solid #e65c00;
   height: 100px;
   width: 400px;
@@ -79,6 +92,25 @@
   font-weight: 600;
   font-family: "Montserrat", sans-serif;
   letter-spacing: 0.3rem;
+}
+@keyframes slide {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.rectangle {
+}
+.rectangle::before {
+  /* transition: tranform 0.5s; */
+  /* transform: scaleX(0); */
+}
+.rectangle:hover {
+  background-color: #e65c00;
+  /* transform: scaleX(1); */
 }
 
 .row-flex-main {
@@ -99,7 +131,9 @@
   border-radius: 50%;
   position: relative;
 }
-
+.circle:hover {
+  background-color: #e65c00;
+}
 .triangle {
   position: absolute;
   top: 50%;
@@ -132,7 +166,11 @@
   height: 40px;
   width: 40px;
   margin-bottom: 20px;
+  position: relative;
 }
+/* .fb:hover {
+  color: #e65c00;
+} */
 .scroll {
   transform: rotate(270deg);
   color: #e0e0e0;
@@ -343,7 +381,7 @@
 }
 /* ...........................Works..................... */
 .works {
-  height: 350vh;
+  height: 300vh;
   width: 100%;
   padding: 0;
   margin: 0;
@@ -450,3 +488,70 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
 } */
+
+/* ........................Number section.................. */
+.number-section {
+  width: 100%;
+  height: 400px;
+  margin-top: 200px;
+  background-image: url("../src/images/background.jpg");
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.grid5 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  width: 80%;
+  margin-left: 200px;
+  margin-top: 70px;
+  column-gap: 10px;
+}
+.num {
+  font-family: "Montserrat", sans-serif;
+
+  font-weight: 600;
+  font-size: 9rem;
+  /* line-height: 1; */
+  color: #ffffff;
+  padding: 0;
+}
+.bottom-line {
+  font-family: "Montserrat", sans-serif;
+  color: #959191;
+  margin-left: 30px;
+  font-size: large;
+}
+.counter {
+}
+.counts {
+}
+.contact {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-image: url("../src/images/mobile-back4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.contact-headline {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 4.6rem;
+  margin-left: 230px;
+  line-height: 1.5;
+  color: #e0e0e0;
+}
+.email {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 3.6rem;
+  margin-left: 230px;
+  line-height: 1.5;
+  color: #0c3e57;
+}
+.email:hover {
+  color: #e65c00;
+}
