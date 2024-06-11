@@ -28,7 +28,7 @@ function Navbar2() {
           </a>
         </div>
         <div className="nav-options-2 contacts">
-          <a href="contact" className="navoptions-color">
+          <a href="#contact" className="navoptions-color">
             CONTACTS
           </a>
         </div>

@@ -41,7 +41,7 @@ function Home() {
             </a>
           </div>
           <div className="nav-options">
-            <a href="contact" className="navoptions-color">
+            <a href="#contact" className="navoptions-color">
               CONTACTS
             </a>
           </div>
