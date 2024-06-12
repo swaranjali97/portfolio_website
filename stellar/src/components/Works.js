@@ -7,26 +7,37 @@ import kodak from "../images/kodak.png";
 import man from "../images/man.jpg";
 import stool from "../images/stool.jpg";
 import plant from "../images/plant.jpg";
+import female from "../images/female-circle.png";
+import male from "../images/male-circle.png";
 
-const counts = document.querySelectorAll(".counts");
-const speed = 97;
-counts.forEach((counter) => {
-  function upData() {
-    const target = Number(counter.getAttribute("data-target"));
-    const count = Number(counter.innerText);
-    const inc = target / speed;
-    if (count < target) {
-      counter.innerText = Math.ceil(Math.floor(inc) + count);
-      // count += Math.max(1, Math.floor(inc));
-      // counter.innerText = count;
-      setTimeout(upData, 15);
-    } else {
-      counter.innerText = target;
-    }
-  }
-  upData();
-});
+// const counts = document.querySelectorAll(".counts");
+// const speed = 97;
+
+// counts.forEach((counter) => {
+//   let started = false;
+//   function upData() {
+//     const target = Number(counter.getAttribute("data-target"));
+//     const count = Number(counter.innerText);
+//     const inc = target / speed;
+//     if (count < target) {
+//       counter.innerText = Math.ceil(Math.floor(inc) + count);
+
+//       setTimeout(upData, 15);
+//     } else {
+//       counter.innerText = target;
+//     }
+//   }
+//   counter.addEventListener("mouseenter", function () {
+//     if (!started) {
+//       started = true;
+//       upData();
+//     }
+//   });
+//   upData();
+// });
 // ..............//
+// ...........................JS FUNTION FOR COUNTER................
+
 function Works() {
   return (
     <div className="works" id="works">
@@ -79,7 +90,10 @@ function Works() {
                 natus asperiores est commodi amet quia <br></br>architecto.
                 Dolores necessitatibus et.
               </div>
-              <div>tim cook</div>
+              <div className="testimonial-names">
+                <img src={male} alt="" className="testimonial-logo"></img>John
+                Cook
+              </div>
             </div>
             <div>
               <div className="grid4-para">
@@ -91,11 +105,14 @@ function Works() {
                 natus asperiores est commodi amet quia <br></br>architecto.
                 Dolores necessitatibus et.
               </div>
-              <div>Sundar Pichai</div>
+              <div className="testimonial-names">
+                <img src={female} alt="" className="testimonial-logo"></img>
+                Daisy Santiago
+              </div>
             </div>
           </div>
           {/* ..........testimonial second page.......... */}
-          <div className="grid4">
+          {/* <div className="grid4">
             <div>
               <div className="grid4-para">
                 Sit ut cum molestiae. Dolore ducimus qui<br></br> quasi. Fugiat
@@ -120,7 +137,7 @@ function Works() {
               </div>
               <div>Sundar Pichai</div>
             </div>
-          </div>
+          </div> */}
           {/* .......dots........ */}
         </div>
       </div>
@@ -132,28 +149,28 @@ function Works() {
         <div className="grid5">
           <div>
             <div className="num counts counter" data-target="213">
-              0
+              213
             </div>
 
             <div className="bottom-line">PROJECTS COMPLETED</div>
           </div>
           <div>
             <div className="num counts counter" data-target="179">
-              0
+              179
             </div>
 
             <div className="bottom-line"> HAPPY CLIENTS</div>
           </div>
           <div>
             <div className="num counts counter" data-target="35">
-              0
+              35
             </div>
 
             <div className="bottom-line">AWARDS RECEIVED</div>
           </div>
           <div>
             <div className="num counts counter" data-target="2319">
-              0
+              2319
             </div>
 
             <div className="bottom-line">CUPS OF COFFEE</div>
